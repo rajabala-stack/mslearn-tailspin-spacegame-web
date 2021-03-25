@@ -6,8 +6,10 @@
 trigger:
 - master
 
-pool:
-  vmImage: ubuntu-latest
+pool: 
+  name: Default
+  demands:
+  - agent.name -equals DESKTOP-6IQ0FI4
 
 variables:
   buildConfiguration: 'Release'
